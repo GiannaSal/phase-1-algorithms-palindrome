@@ -1,6 +1,29 @@
-function isPalindrome(word) {
+function isPalindrome(string) {
+  const arrayValues = string.split('')
+  const reverseArrayValues = arrayValues.reverse()
+  const reverseString = reverseArrayValues.join('')
+  if( string == reverseString){
+    return(true)
+  }else{
+    return (false)
+  }
   // Write your algorithm here
+  
 }
+
+// const len = word.length
+//   for (let i =0; i < len/2; i++){
+//     if (word[i] !== word[len - 1 -i]){
+//       return 'True';
+//     }
+//   }
+//   return 'False'
+  
+// const word = "abba"
+// const value = isPalindrome(word)
+// console.log(value)
+
+
 
 /* 
   Add your pseudocode here
